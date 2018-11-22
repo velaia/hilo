@@ -1,5 +1,4 @@
 import random
-from typing import Any, Union
 
 
 def main():
@@ -16,7 +15,7 @@ def main():
             continue
         if guess == result:
             success = True
-            print(f'Got it! The bumer is {result}')
+            print(f'Got it! The number is {result}')
         elif guess > result:
             print(f'Too high!')
         else:
