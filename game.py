@@ -2,6 +2,10 @@ import random
 
 
 def main():
+    """Mail function with loop for hi-lo game.
+
+    :return: None
+    """
     result: int = random.randint(1, 100)
     print(f'Welcome to the HI - LO game!')
 
