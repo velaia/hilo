@@ -1,14 +1,19 @@
 import random
+from typing import Any, Union
 
 
 def main():
     success: bool = False
+    result: int = random.randint(1, 100)
     print(f'Welcome to the HI - LO game!')
-    result = random.randint(1, 100)
 
     while success is not True:
-        guess = input('Guess a number between 1 & 100: ')
-        guess = int(guess)
+        guess_orig = input('Guess a number between 1 & 100: ')
+        try:
+            guess = int(guess_orig)
+        except ValueError:
+            print(f'No integer given: {guess_orig}')
+            continue
         if guess == result:
             success = True
             print(f'Got it! The bumer is {result}')
