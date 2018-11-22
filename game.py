@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    """Mail function with loop for hi-lo game.
+    """Main function with loop for hi-lo game.
 
     :return: None
     """
